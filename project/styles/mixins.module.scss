@@ -1,0 +1,19 @@
+@import './variables.module.scss';
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+
+
+
+@mixin link-focus-outline {
+    outline: none;
+
+    &:focus-visible {
+        outline: 2x solid $green;
+        outline-offset: 4px;
+    }
+}
