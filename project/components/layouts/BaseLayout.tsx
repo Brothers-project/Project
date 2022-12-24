@@ -3,7 +3,7 @@ import cn from 'classnames';
 import Header from "../shared/header/Header";
 import Footer from "../shared/footer/Footer";
 import { links } from "../../data/header/link";
-import { imageLogo } from '../../data/header/image';
+import { imageLogoBlack, imageLogoWhite } from '../../data/header/image';
 import styles from './baseLayoutStyles.module.scss'
 
 export interface BaseLayoutPropsTypes {
@@ -17,13 +17,13 @@ const BaseLayout: React.FC<BaseLayoutPropsTypes> = props => {
 
   return (
     <>
-      <Header logoImage={imageLogo} links={links} className={rootClassNames} />
+      <Header logoImage={imageLogoBlack} links={links} className={rootClassNames} />
       <main>
         <div className={rootClassNames} >
           {children}
         </div>
       </main>
-      <Footer className={rootClassNames} />
+      <Footer logoImage={imageLogoWhite} links={links} className={rootClassNames} />
     </>
   )
 }

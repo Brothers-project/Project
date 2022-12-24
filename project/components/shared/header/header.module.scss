@@ -8,11 +8,13 @@
   align-items: center;
   min-height: 110px;
   height: 110px;
+  box-shadow: 0 0 17px 0 rgb(0 0 0 / 15%);
 }
 
 .wrapperBrandImageComponent {
   width: 130px;
   height: 70px;
+  cursor: pointer;
 }
 
 .containerLinks {
