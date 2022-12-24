@@ -1,5 +1,6 @@
-export const brand = "Sergey Dyachenko"
-export const links = [
+import { LinkDropdownTypes, LinkTypes } from '../../interfaces/header/interfaces';
+
+export const links: LinkTypes[] = [
     {
         id: 1,
         href: "/about",
@@ -30,7 +31,7 @@ export const links = [
     },
 ];
 
-export const linkToSection = [
+export const linkToSection: LinkDropdownTypes[] = [
     {
         id: 21,
         href: "logoDesign",

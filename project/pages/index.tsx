@@ -1,11 +1,11 @@
-import Main from './about';
 import VideoBanner from "../components/banners/VideoBanner/VideoBanner";
 
-export default function Home() {
+ const Home = () => {
   return (
     <>
-        <VideoBanner />
-   
+      <VideoBanner />
     </>
   )
 }
+
+export default Home;
