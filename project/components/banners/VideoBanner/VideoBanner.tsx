@@ -1,10 +1,11 @@
 import React from "react";
+import styles from './videoBanner.module.scss'
 
 
 const VideoBanner = () => {
 
     return (
-        <>VideoBanner</>
+        <div className={styles.wrapper}>VideoBanner</div>
     )
 }
 
