@@ -1,0 +1,26 @@
+.contactLinkWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    cursor: pointer;
+}
+
+.footerContactLinkWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.footerSocialLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
