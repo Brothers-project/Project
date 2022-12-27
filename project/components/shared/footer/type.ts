@@ -1,15 +1,15 @@
 import { FooterLinkTypes, FooterSocialLinkTypes } from "../../../interfaces/footer/interfaces";
 import { LinkTypes } from "../../../interfaces/header/interfaces";
-import { ImageProps } from "../../../interfaces/image";
+import { ImagePropsType } from "../../../interfaces/image";
 
 export interface FooterPropsType {
-    logoImage: ImageProps,
+    logoImage: ImagePropsType,
     links: LinkTypes[],
     className?: string,
 }
 
 export interface ImageNavBrandProps {
-    logoImage: ImageProps;
+    logoImage: ImagePropsType;
     className?: string;
 }
 
