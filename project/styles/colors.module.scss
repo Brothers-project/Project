@@ -1,6 +1,8 @@
 $white: #fff;
 $black: #000;
 
+$DarkGrey: #A9A9A9;
+
 $green: #008000;
 
 $Indigo: #4B0082;
@@ -11,6 +13,7 @@ $MediumSlateBlue: #7B68EE;
 :export {
     white: $white;
     black: $black;
+    DarkGrey: $DarkGrey;
     green: $green;
     indigo: $Indigo;
     MediumSlateBlue: $MediumSlateBlue;

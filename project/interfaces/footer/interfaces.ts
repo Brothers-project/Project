@@ -1,16 +1,16 @@
-import { ImageProps } from "../image";
+import { ImagePropsType } from "../image";
 
 export interface FooterLinkTypes {
     id: number,
     href: string;
     title: string;
     className?: string;
-    icon: ImageProps;
+    icon: ImagePropsType;
 }
 
 export interface FooterSocialLinkTypes {
     id: number,
     href: string;
     className?: string;
-    icon: ImageProps;
+    icon: ImagePropsType;
 }

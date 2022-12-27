@@ -18,18 +18,18 @@ const BaseLayout: React.FC<BaseLayoutPropsTypes> = props => {
 
   return (
     <>
-    <Background background='white'>
-      <Header logoImage={imageLogoBlack} links={links} className={cn(rootClassNames)} />
+      <Background background='white'>
+        <Header logoImage={imageLogoBlack} links={links} className={cn(rootClassNames)} />
       </Background>
       <main>
-      <Background background='white'>
-        <div className={rootClassNames} >
-          {children}
-        </div>
+        <Background background='white'>
+          <div className={rootClassNames} >
+            {children}
+          </div>
         </Background>
       </main>
       <Background background="black">
-      <Footer logoImage={imageLogoWhite} links={links} className={rootClassNames} />
+        <Footer logoImage={imageLogoWhite} links={links} className={rootClassNames} />
       </Background>
     </>
   )

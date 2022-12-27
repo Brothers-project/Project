@@ -1,6 +1,6 @@
-import { ImageProps as NextImageProps } from "next/legacy/image";
+import { ImageProps as NextImagePropsType } from "next/legacy/image";
 
-export interface ImageProps extends NextImageProps {
+export interface ImagePropsType extends NextImagePropsType {
     src: any;
     alt: string;
     width?: number;

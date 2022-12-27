@@ -1,0 +1,36 @@
+@import "../../../../styles/mixins.module.scss";
+@import "../../../../styles/colors.module.scss";
+@import "../../../../styles/variables.module.scss";
+
+.videoCarouselItemWrapper {
+  display: flex;
+  width: 585px;
+}
+
+.videoCarouselItemContainer {
+  min-width: 75px;
+  min-height: 75px;
+  background-color: $black;
+  opacity: 0.6;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+
+.videoCarouselItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px 0;
+  padding: 10px 5px;
+  color: $white;
+}
+
+.videoCarouselItemText {
+  text-align: center;
+  font-size: 12px;
+}
+
+.image {
+  height: 30px;
+  width: 30px;
+}
