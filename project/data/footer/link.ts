@@ -1,5 +1,5 @@
 import { FooterLinkTypes, FooterSocialLinkTypes } from '../../interfaces/footer/interfaces';
-import { imageEmail, imageFacebook, imageInst, imageInstagram, imagePhone, imageTwitter } from './image';
+import { imageEmail, imageFacebook, imageInst, imageYoutube, imagePhone, imageTwitter } from './image';
 
 export const footerLinks: FooterLinkTypes[] = [
     {
@@ -23,7 +23,7 @@ export const footerSocialLinks: FooterSocialLinkTypes[] = [
         id: 1,
         href: "https://www.youtube.com/c/jamesqquick",
         className: "",
-        icon: imageInstagram,
+        icon: imageYoutube,
     },
     {
         id: 2,

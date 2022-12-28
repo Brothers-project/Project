@@ -16,9 +16,15 @@
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
     cursor: pointer;
+
+    width: 25px;
+    height: 25px;
+
+    @include desktop {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 
@@ -27,4 +33,20 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @include tablet {
+        width: 75%
+    }
+
+    @include desktop {
+        width: 75%
+    }
+
+    @include desktop-large {
+        width: 42%
+    }
+}
+
+.footerSocialLink {
+    margin-right: 5px;
 }

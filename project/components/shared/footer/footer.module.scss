@@ -38,9 +38,15 @@
 }
 
 .link {
-    font-size: 28px;
-    line-height: 48px;
+    font-size: 21px;
+    line-height: 36px;
     letter-spacing: -.56px;
+
+    @include desktop {
+        font-size: 28px;
+        line-height: 48px;
+        letter-spacing: -.56px;
+    }
 }
 
 .linkTitle{

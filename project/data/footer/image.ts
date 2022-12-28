@@ -2,8 +2,9 @@ import logoWhite from '../../public/images/header/kevo_white.svg';
 import phone from '../../public/images/footer/PH.svg';
 import email from '../../public/images/footer/EM.svg';
 import facebook from '../../public/images/footer/FACE.svg';
-import instagram from '../../public/images/footer/IN.svg';
+import youtube from '../../public/images/footer/IN.svg';
 import twitter from '../../public/images/footer/TW.svg';
+import inst from '../../public/images/footer/inst.svg';
 import { ImagePropsType } from '../../interfaces/image';
 
 export const imageLogoWhite: ImagePropsType = {
@@ -21,8 +22,8 @@ export const imageEmail: ImagePropsType = {
     alt: "icon of Phone",
 }
 
-export const imageInstagram: ImagePropsType = {
-    src: instagram,
+export const imageYoutube: ImagePropsType = {
+    src: youtube,
     alt: "icon of Instagram",
 }
 
@@ -33,5 +34,10 @@ export const imageFacebook: ImagePropsType = {
 
 export const imageTwitter: ImagePropsType = {
     src: twitter,
+    alt: "icon of Twitter",
+}
+
+export const imageInst: ImagePropsType = {
+    src: inst,
     alt: "icon of Twitter",
 }
