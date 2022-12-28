@@ -18,9 +18,15 @@
     }
 }
 
+@mixin desktop-large {
+    @media (min-width: #{$desktop-width + 1px}) {
+        @content;
+    }
+}
+
 @mixin make-side-margin($max-width: $max-content-width) {
-    margin-left: $side-margin;
-    margin-right: $side-margin;
+    margin-left: $mobile-side-margin;
+    margin-right: $mobile-side-margin;
 
     @include tablet {
         margin-left: $tablet-side-margin;
@@ -40,8 +46,26 @@
     }
 }
 
+@mixin make-side-padding($max-width: $max-content-width) {
+    padding-left: $mobile-side-margin;
+    padding-right: $mobile-side-margin;
 
+    @include tablet {
+        padding-left: $tablet-side-margin;
+        padding-right: $tablet-side-margin;
+    }
+ 
+    @include desktop() {
+        padding-left: $desktop-side-margin;
+        padding-right: $desktop-side-margin;
+    }
 
+    // centering content when max-width reached (+ paddings)
+    @media (min-width: #{$max-width + 2 * $desktop-side-margin + 1px}) {
+        padding-left: calc((100vw - $max-width) / 2);
+        padding-right: calc((100vw - $max-width) / 2);
+    }
+}
 
 @mixin link-focus-outline {
     outline: none;

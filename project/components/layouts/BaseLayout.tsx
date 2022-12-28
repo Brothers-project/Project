@@ -23,9 +23,7 @@ const BaseLayout: React.FC<BaseLayoutPropsTypes> = props => {
       </Background>
       <main>
         <Background background='white'>
-          <div className={rootClassNames} >
-            {children}
-          </div>
+          {children}
         </Background>
       </main>
       <Background background="black">

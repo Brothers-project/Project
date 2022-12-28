@@ -8,10 +8,7 @@ const VideoBanner = () => {
 
     return (
         <div className={styles.wrapper}>
-            {/* <div style={{ background: '#00f', height: '400px' }}> */}
             <video
-                // width={1200}
-                height={400}
                 autoPlay
                 playsInline
                 muted
@@ -27,7 +24,6 @@ const VideoBanner = () => {
                     type="video/webm"
                 /> */}
                 Your browser doesn't support HTML5 video tag.
-                {/* </div> */}
             </video>
             <div className={styles.videoCarouselContainer}>
                 <VideoCarousel videoCarouselData={videoCarouselData} showItems={showItems} />

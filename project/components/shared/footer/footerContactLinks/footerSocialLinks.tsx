@@ -26,7 +26,7 @@ const FooterSocialLinks: React.FC<FooterSocialLinksType> = (props) => {
     return (
         <ul className={styles.footerSocialLinks}>
             {footerSocialLinks.map((footerLink) =>
-                <li key={footerLink.id}>
+                <li key={footerLink.id} className={styles.footerSocialLink}>
                     <FooterLinks {...footerLink} />
                 </li>
             )}
