@@ -9,7 +9,7 @@ export interface BackgroundPropsTypes {
 }
 
 const Background: React.FC<BackgroundPropsTypes> = props => {
-    const { background, children } = props;
+    const { background, children, className = '' } = props;
 
     const backgroundColor = cn(styles.backgroundWrapper, {
         [styles.black]: background === 'black',
@@ -17,7 +17,7 @@ const Background: React.FC<BackgroundPropsTypes> = props => {
     });
 
     return (
-        <div className={backgroundColor}>
+        <div className={cn(backgroundColor, className)}>
             {children}
         </div>
     )
