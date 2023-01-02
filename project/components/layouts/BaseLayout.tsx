@@ -5,7 +5,7 @@ import Footer from "../shared/footer/Footer";
 import { links } from "../../data/header/link";
 import { imageLogoBlack, imageLogoWhite } from '../../data/header/image';
 import styles from './baseLayoutStyles.module.scss'
-import Background from "../component/background/Bacground";
+import Background from "../component/background/Background";
 
 export interface BaseLayoutPropsTypes {
   className?: string;
@@ -18,9 +18,7 @@ const BaseLayout: React.FC<BaseLayoutPropsTypes> = props => {
 
   return (
     <>
-      <Background background='white'>
         <Header logoImage={imageLogoBlack} links={links} className={cn(rootClassNames)} />
-      </Background>
       <main>
         <Background background='white'>
           {children}

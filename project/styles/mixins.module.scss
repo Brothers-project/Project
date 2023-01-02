@@ -24,6 +24,12 @@
     }
 }
 
+@mixin tablet-up {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
 @mixin make-side-margin($max-width: $max-content-width) {
     margin-left: $mobile-side-margin;
     margin-right: $mobile-side-margin;
