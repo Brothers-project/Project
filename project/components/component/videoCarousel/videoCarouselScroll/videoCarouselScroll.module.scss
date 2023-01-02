@@ -5,6 +5,10 @@
 .videoCarouselItemWrapper {
   display: flex;
   width: 585px;
+
+  @include mobile {
+    width: fit-content;
+  }
 }
 
 .videoCarouselItemContainer {

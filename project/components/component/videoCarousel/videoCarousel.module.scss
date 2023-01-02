@@ -10,6 +10,11 @@
   background-color: inherit;
   border: none;
   margin: 0 15px;
+
+  @include mobile {
+    display: none;
+    overflow: hidden;
+  }
 }
 
 .buttonLeftScrollWrapper {
@@ -47,7 +52,7 @@
 
 .videoCarouselScroll {
     overflow: hidden;
-    min-width: 588px;
+    min-width: fit-content;
 }
 
 .visible {

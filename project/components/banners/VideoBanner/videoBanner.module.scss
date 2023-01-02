@@ -16,7 +16,17 @@
   position: absolute;
   top: 170px;
 
-  // @include mobile {
-  //   overflow-x: scroll;
-  // }
+  @include mobile {
+    position: static;
+    padding-right: 30px;
+    padding-left: 30px;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
