@@ -12,6 +12,13 @@
     grid-template-areas: 
     "a b c"
     "a b c";
+
+    @include mobile {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+        "a d"
+        "b c";
+    }
 }
 
 .logo {
